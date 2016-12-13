@@ -13,6 +13,8 @@ public class Bank {
     
     private String bankName;
     private String translatorRoutingKey;
+    private String fanoutName;
+    private String headerLanguage;
     private float durationMin;
     private float durationMax;
     private float amountMin;
@@ -20,9 +22,11 @@ public class Bank {
     private int creditScoreMin;
     private int creditScoreMax;
 
-    public Bank(String bankName, String translatorRoutingKey, float durationMin, float durationMax, float amountMin, float amountMax, int creditScoreMin, int creditScoreMax) {
+    public Bank(String bankName, String translatorRoutingKey, String fanoutName, String headerLanguage, float durationMin, float durationMax, float amountMin, float amountMax, int creditScoreMin, int creditScoreMax) {
         this.bankName = bankName;
         this.translatorRoutingKey = translatorRoutingKey;
+        this.fanoutName = fanoutName;
+        this.headerLanguage = headerLanguage;
         this.durationMin = durationMin;
         this.durationMax = durationMax;
         this.amountMin = amountMin;

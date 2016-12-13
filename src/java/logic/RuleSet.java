@@ -19,8 +19,9 @@ public class RuleSet {
 
     public RuleSet() {
         banks = new ArrayList<Bank>();
-        banks.add(new Bank("Svinninge Bank", "svin_bank", 12.0f, 24.0f, 10000.0f, 100000.0f, 400, 800));
-        banks.add(new Bank("Kundby Bank", "kund_bank", 0.0f, 24.0f, 0.0f, 100000.0f, 0, 800));
+        banks.add(new Bank("Bank XML", "laurbaer_xml_translator", "cphbusiness.bankXML", "XML", 12.0f, 24.0f, 10000.0f, 100000.0f, 0, 800));
+        banks.add(new Bank("Bank JSON", "laurbaer_json_translator", "cphbusiness.bankJSON", "JSON", 0.0f, 24.0f, 0.0f, 100000.0f, 0, 800));
+        banks.add(new Bank("Bank Laurbaer", "laurbaer_webservice_translator", "", "string", 0.0f, 24.0f, 0.0f, 100000.0f, 0, 800));
     }
 
     public List<Bank> getBanks(float duration, float amount, int creditScore) {
